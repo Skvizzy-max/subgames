@@ -1,3 +1,4 @@
+
 name: Update SubGames
 
 on:
@@ -9,5 +10,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Test workflow
-        run: echo "SubGames workflow works!"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check workflow
+        run: echo "SubGames daily workflow is working!"
